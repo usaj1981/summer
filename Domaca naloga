@@ -1,0 +1,25 @@
+--izpisi Name iz tabele Artist
+SELECT Name
+FROM Artist;
+
+--izpisi vse podatke, kjer je BillingCountry Germany iz tabele Invoice
+SELECT *
+FROM Invoice
+WHERE BillingCountry='Germany';
+
+--prestej vse albume
+SELECT COUNT(*)
+FROM Album;
+
+--prestej stranke Customer iz Francije
+SELECT COUNT(*)
+FROM Customer
+WHERE Country='France';
+
+--vsota vseh racunov (Total) v bazi Invoice
+SELECT SUM(Total)
+FROM Invoice;
+
+-- povprečen znesek računa (Total) v bazi Invoice
+SELECT AVG(Total)
+FROM Invoice;
